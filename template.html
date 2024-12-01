@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown menu and Image carousel test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="contentbox">
+      <header>
+        <nav class="mainnav">
+          <div class="dropdownmenucontainer">
+            <button type="button" class="menubutton" id="menubutton"></button>
+            <div id="dropdownmenu" class="dropdownmenu">
+              <ul class="dropdownmenuitems">
+                <li><a href="">Menu item</a></li>
+                <li><a href="">Menu item</a></li>
+                <li><a href="">Menu item</a></li>
+                <li><a href="">Menu item</a></li>
+                <li><a href="">Menu item</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <div id="imagecarouselframe">
+          <div class="slide activeimage">
+            <img src="images/building-5834006_640.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/door-8453898_640.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/dublin-4955342_640.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/street-4630827_640.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/sunset-8064078_640.jpg" alt="" />
+          </div>
+          <div class="navbuttons">
+            <a id="prevImageButton" class="navbutton">&#10094;</a>
+            <a id="nextImageButton" class="navbutton">&#10095;</a>
+          </div>
+        </div>
+        <div id="circlecontainer">
+          <span class="navcircle activecircle"></span>
+          <span class="navcircle"></span>
+          <span class="navcircle"></span>
+          <span class="navcircle"></span>
+          <span class="navcircle"></span>
+        </div>
+        <form novalidate>
+          <label for="name">Name: </label>
+          <input type="text" id="name" minlength="3" maxlength="10">
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
